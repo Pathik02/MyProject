@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Calculator</title>
+  <!-- Bootstrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- stylesheet links -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footer.css">
+
+<!-- icon link -->
+<script src="https://kit.fontawesome.com/07354dee9e.js" crossorigin="anonymous"></script>
+  
+  <!-- Custom styles -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      padding-top: 50px;
+    }
+
+    .cointaint {
+      max-width: 600px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .header-and-description {
+      text-align: center;
+      margin-bottom: 30px;
+    } 
+    .header-and-description h1 {
+      font-size: 32px;
+      color: #003366;
+    }
+    .header-and-description h4 {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .btn-primary {
+      background-color: #003366;
+      border-color: #003366;
+      font-weight: bold;
+    }
+
+    .btn-primary:hover {
+      background-color: #002944;
+      border-color: #002944;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    #result {
+      margin-top: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+      display: none;
+    }
+
+    #result h2 {
+      color: #003366;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #result p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- <navbar> -->
+  <div class="bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand mb-0 h1">
+          <img class="d-inline-block align-top" src="new_logo.png" width="70" height="70" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link  ">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="AboutUs_aboutUs.html" class="dropdown-item ">About Us</a></li>
+                <li><a href="AboutUs_awards.html" class="dropdown-item">Awards</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Life Insurance</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="lifeInsurance.html" class="dropdown-item">Why Life Insurance?</a></li>
+                <li><a href="lifeInsurance_benefits.html" class="dropdown-item">Benefits of  Life Insurance?</a></li>
+                <li><a href="lifeInsurance_Type.html" class="dropdown-item">Life Insurance Products</a></li>
+                <li><a href="Calculator_Premium.html" class="dropdown-item">Premium Calculator</a></li>
+                <li><a href="Calculator_hlv.html" class="dropdown-item">HLV Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">General Insurance</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="GeneralInsurance_general.html" class="dropdown-item">General Insurance</a></li>
+                <li><a href="GeneralInsurance_health.html" class="dropdown-item">Health Insurance</a></li>
+                <li><a href="GeneralInsurance_car.html" class="dropdown-item">Car Insurance</a></li>
+                <li><a href="GeneralInsurance_home.html" class="dropdown-item">Home Insurance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="homeloan.html" class="nav-link">Home Loan</a>
+            </li>
+            <li class="nav-item">
+              <a href="deposite.html" class="nav-link">Deposit</a>
+            </li>
+            <li class="nav-item">
+              <a href="bond.html" class="nav-link">Bonds</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blogs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reach Us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="contactUs.html" class="dropdown-item">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="login.html" class="btn me-2" style="background-color: #003366; color: white;">Login</a>
+            <a href="register.html" class="btn" style="background-color: #003366; color: white;">Register</a>
+        </div>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <!-- </navbar> -->
+
+<div class="container cointaint">
+  <div class="header-and-description">
+    <h1>Premium Calculator</h1>
+    <h4>Calculate your insurance premium based on your sum assured, policy term, age, and premium payment frequency.</h4>
+  </div>
+
+  <form id="premiumCalculatorForm">
+    <div class="mb-3">
+      <label for="sumAssured" class="form-label">Sum Assured (₹):</label>
+      <input type="number" class="form-control" id="sumAssured" required>
+    </div>
+    <div class="mb-3">
+      <label for="policyTerm" class="form-label">Policy Term (years):</label>
+      <input type="number" class="form-control" id="policyTerm" required>
+    </div>
+    <div class="mb-3">
+      <label for="age" class="form-label">Age:</label>
+      <input type="number" class="form-control" id="age" required>
+    </div>
+    <div class="mb-3">
+      <label for="frequency" class="form-label">Premium Payment Frequency:</label>
+      <select class="form-control" id="frequency" required>
+        <option value="yearly">Yearly</option>
+        <option value="half-yearly">Half-Yearly</option>
+        <option value="quarterly">Quarterly</option>
+        <option value="monthly">Monthly</option>
+      </select>
+    </div>
+    <div class="text-right">
+      <button type="button" class="btn btn-primary" onclick="calculatePremium()">Calculate Premium</button>
+    </div>
+  </form>
+
+  <div id="result" style="display:none;">
+    <h2>Premium Calculation Result</h2>
+    <p><strong>Sum Assured:</strong> ₹<span id="resultSumAssured"></span></p>
+    <p><strong>Policy Term:</strong> <span id="resultPolicyTerm"></span> years</p>
+    <p><strong>Age:</strong> <span id="resultAge"></span></p>
+    <p><strong>Premium Payment Frequency:</strong> <span id="resultFrequency"></span></p>
+    <p><strong>Calculated Premium:</strong> ₹<span id="resultPremium"></span></p>
+  </div>
+</div>
+
+<script>
+  function calculatePremium() {
+    var sumAssured = parseFloat(document.getElementById('sumAssured').value);
+    var policyTerm = parseInt(document.getElementById('policyTerm').value);
+    var age = parseInt(document.getElementById('age').value);
+    var frequency = document.getElementById('frequency').value;
+
+    // Dummy calculation logic for demonstration purposes
+    var baseRate = 0.05; // Base rate of 5% for premium calculation
+    var premium = sumAssured * baseRate * policyTerm / (100 - age);
+
+    // Adjust premium based on frequency
+    switch(frequency) {
+      case 'half-yearly':
+        premium /= 2;
+        break;
+      case 'quarterly':
+        premium /= 4;
+        break;
+      case 'monthly':
+        premium /= 12;
+        break;
+    }
+
+    // Update results
+    document.getElementById('resultSumAssured').innerText = sumAssured.toFixed(2);
+    document.getElementById('resultPolicyTerm').innerText = policyTerm;
+    document.getElementById('resultAge').innerText = age;
+    document.getElementById('resultFrequency').innerText = frequency.charAt(0).toUpperCase() + frequency.slice(1);
+    document.getElementById('resultPremium').innerText = premium.toFixed(2);
+
+    // Show result container
+    document.getElementById('result').style.display = 'block';
+  }
+</script>
+
+<!-- Footer -->
+<footer class="footer text-center text-lg-start bg-light text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Social Media Links -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </section>
+
+  <!-- Footer Links -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <!-- Footer Column 1 -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">TrueWealth Financial Consultancy</h6>
+          <p>TrueWealth Financial Consultancy offers personalized financial solutions, including insurance plans and investment strategies, to help individuals achieve their financial goals with confidence.</p>
+        </div>
+
+        <!-- Footer Column 2 -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+          <p><a href="lifeInsurance.html" class="text-reset">Life Insurance</a></p>
+          <p><a href="GeneralInsurance_general.html" class="text-reset">General Insurance</a></p>
+          <p><a href="homeloan.html" class="text-reset">Home Loan</a></p>
+          <p><a href="deposite.html" class="text-reset">Deposits</a></p>
+        </div>
+
+        <!-- Footer Column 3 -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p><a href="AboutUs_aboutUs.html" class="text-reset">About Us</a></p>
+          <p><a href="contactUs.html" class="text-reset">Contact Us</a></p>
+          <p><a href="blog.html" class="text-reset">Blogs</a></p>
+          <p><a href="Calculator_Premium.html" class="text-reset">Premium Calculator</a></p>
+        </div>
+
+        <!-- Footer Column 4 -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Vadodara</p>
+          <p><i class="fas fa-envelope me-3"></i> TrueWealth Financial Consultancy33@gmail.com</p>
+          <p><i class="fas fa-phone me-3"></i> +91 9824079931</p>
+          <p><i class="fas fa-print me-3"></i> +91 9722225578</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Bottom -->
+  <div class="text-center p-4">
+    &copy; 2023 Copyright:
+    <a class="text-reset fw-bold" href="#">TrueWealth Financial Consultancy.com</a>
+  </div>
+</footer>
+
+
+</body>
+</html>

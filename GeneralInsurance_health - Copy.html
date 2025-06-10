@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance</title>
+  <!-- Bootstrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- stylesheet links -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="footer.css">
+
+<!-- icon link -->
+<script src="https://kit.fontawesome.com/07354dee9e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #003366;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid #ffcc00;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .content {
+            padding: 40px 20px;
+        }
+        .benefits, .coverage {
+            margin-top: 40px;
+        }
+        .benefits h4, .coverage h4 {
+            color: #003366;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+        }
+        .card {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            min-height: 250px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-body {
+            padding: 30px;
+        }
+        .card-title {
+            font-size: 24px;
+            color: #003366;
+            margin-bottom: 15px;
+        }
+        .card-text {
+            font-size: 16px;
+            color: #555;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .header p, .content p {
+            font-size: 18px;
+        }
+        .header img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- <navbar> -->
+  <div class="bg-white">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand mb-0 h1">
+          <img class="d-inline-block align-top" src="new_logo.png" width="70" height="70" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link  ">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="AboutUs_aboutUs.html" class="dropdown-item ">About Us</a></li>
+                <li><a href="AboutUs_awards.html" class="dropdown-item">Awards</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Life Insurance</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="lifeInsurance.html" class="dropdown-item">Why Life Insurance?</a></li>
+                <li><a href="lifeInsurance_benefits.html" class="dropdown-item">Benefits of  Life Insurance?</a></li>
+                <li><a href="lifeInsurance_Type.html" class="dropdown-item">Life Insurance Products</a></li>
+                <li><a href="Calculator_Premium.html" class="dropdown-item">Premium Calculator</a></li>
+                <li><a href="Calculator_hlv.html" class="dropdown-item">HLV Calculator</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">General Insurance</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="GeneralInsurance_general.html" class="dropdown-item">General Insurance</a></li>
+                <li><a href="GeneralInsurance_health.html" class="dropdown-item">Health Insurance</a></li>
+                <li><a href="GeneralInsurance_car.html" class="dropdown-item">Car Insurance</a></li>
+                <li><a href="GeneralInsurance_home.html" class="dropdown-item">Home Insurance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="homeloan.html" class="nav-link">Home Loan</a>
+            </li>
+            <li class="nav-item">
+              <a href="deposite.html" class="nav-link">Deposit</a>
+            </li>
+            <li class="nav-item">
+              <a href="bond.html" class="nav-link">Bonds</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blogs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Reach Us</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="contactUs.html" class="dropdown-item">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="login.html" class="btn me-2" style="background-color: #003366; color: white;">Login</a>
+            <a href="register.html" class="btn" style="background-color: #003366; color: white;">Register</a>
+        </div>
+        
+        </div>
+      </div>
+    </nav>
+    </div>
+
+    <!-- </navbar> -->
+
+    <div class="header">
+         <!-- <img src="personal_accident_icon.png" alt="Personal Accident Insurance" width="100" height="100"> -->
+         <h1 style="margin-top: 100px;">Health Insurance</h1>
+        <p>Protect your well-being with our comprehensive health insurance plans</p>
+    </div>
+
+    <div class="container content">
+      <div style="display: flex; justify-content: center;">
+        <img class="contentimg" style="height: 300px;" src="generalHealth.png" alt=" ">
+          </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Why Choose Health Insurance?</h3>
+                <p>Health insurance is crucial in managing the financial burden of medical expenses. It offers coverage for hospitalization, treatments, and other medical costs, ensuring you get the necessary healthcare without worrying about the high costs. Health insurance provides peace of mind by safeguarding your financial health during medical emergencies.</p>
+            </div>
+        </div>
+
+        <div class="row benefits">
+            <div class="col-md-12">
+                <h4>Benefits of Health Insurance</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Comprehensive Medical Coverage</h5>
+                        <p class="card-text">Covers a wide range of medical services, including hospital stays, surgeries, and outpatient care.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Security</h5>
+                        <p class="card-text">Protects you from high medical costs, ensuring you receive the necessary treatment without financial strain.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Access to Quality Healthcare</h5>
+                        <p class="card-text">Provides access to a network of quality healthcare providers, ensuring you receive the best medical care possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row coverage">
+            <div class="col-md-12">
+                <h4>What Does Health Insurance Cover?</h4>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Hospitalization Expenses</h5>
+                        <p class="card-text">Covers the cost of hospital stays, including room charges, nursing, and other related expenses.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pre and Post Hospitalization</h5>
+                        <p class="card-text">Includes expenses incurred before and after hospitalization, such as diagnostics and follow-up treatments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Daycare Procedures</h5>
+                        <p class="card-text">Covers medical treatments that do not require an overnight hospital stay, such as minor surgeries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<!-- Footer -->
+<footer class="footer text-center text-lg-start bg-light text-muted">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Social Media Links -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-google"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="me-4 text-reset"><i class="fab fa-linkedin"></i></a>
+      </div>
+  </section>
+
+  <!-- Footer Links -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <!-- Footer Column 1 -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">TrueWealth Financial Consultancy</h6>
+          <p>TrueWealth Financial Consultancy offers personalized financial solutions, including insurance plans and investment strategies, to help individuals achieve their financial goals with confidence.</p>
+        </div>
+
+        <!-- Footer Column 2 -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+          <p><a href="lifeInsurance.html" class="text-reset">Life Insurance</a></p>
+          <p><a href="GeneralInsurance_general.html" class="text-reset">General Insurance</a></p>
+          <p><a href="homeloan.html" class="text-reset">Home Loan</a></p>
+          <p><a href="deposite.html" class="text-reset">Deposits</a></p>
+        </div>
+
+        <!-- Footer Column 3 -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+          <p><a href="AboutUs_aboutUs.html" class="text-reset">About Us</a></p>
+          <p><a href="contactUs.html" class="text-reset">Contact Us</a></p>
+          <p><a href="blog.html" class="text-reset">Blogs</a></p>
+          <p><a href="Calculator_Premium.html" class="text-reset">Premium Calculator</a></p>
+        </div>
+
+        <!-- Footer Column 4 -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Vadodara</p>
+          <p><i class="fas fa-envelope me-3"></i> TrueWealth Financial Consultancy33@gmail.com</p>
+          <p><i class="fas fa-phone me-3"></i> +91 9824079931</p>
+          <p><i class="fas fa-print me-3"></i> +91 9722225578</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Bottom -->
+  <div class="text-center p-4">
+    &copy; 2023 Copyright:
+    <a class="text-reset fw-bold" href="#">TrueWealth Financial Consultancy.com</a>
+  </div>
+</footer>
+
+
+</body>
+</html>

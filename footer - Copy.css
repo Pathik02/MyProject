@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
+
+.header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog-post {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post h2 {
+    color: #D3D3D3;
+}
+
+.blog-post p {
+    color: #666;
+}
+
+.sidebar h3 {
+    color: #333;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #D3D3D3;
+    color: #0a0a0a;
+    text-align: center;
+    /* padding: 20px; */
+    width: 100%;
+}
+
+.footer a {
+    color: #0a0a0a; /* Default color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+/* Override Bootstrap link styles */
+a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+/* Button color customization */
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+}
+
+.btn-primary:hover {
+    background-color: #002245;
+    border-color: #002245;
+}
+
+/* Adjust menu alignment */
+.footer-nav {
+    text-align: left; /* Align menu items to the left */
+}
+
+.footer-nav ul {
+    padding-left: 0; /* Remove default padding */
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px; /* Adjust margin between items */
+}
